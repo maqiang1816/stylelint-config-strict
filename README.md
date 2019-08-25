@@ -1,9 +1,11 @@
-# stylelint-config-strict
+# @xmgh/stylelint-config-strict
+
+A strict shareable config for stylelint
 
 ## Installation
 
 ```bash
-npm install stylelint-config-strict --save-dev
+npm install @xmgh/stylelint-config-strict --save-dev
 ```
 
 ## Usage
@@ -12,7 +14,7 @@ Since [stylelint 9.7.0](https://github.com/stylelint/stylelint/blob/9.7.0/CHANGE
 
 ```json
 {
-  "extends": "stylelint-config-strict"
+  "extends": "@xmgh/stylelint-config-strict"
 }
 ```
 
@@ -24,7 +26,7 @@ For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` 
 
 ```json
 {
-  "extends": "stylelint-config-strict",
+  "extends": "@xmgh/stylelint-config-strict",
   "rules": {
     "at-rule-no-unknown": [ true, {
       "ignoreAtRules": [
@@ -45,7 +47,7 @@ The config is broadly compatible with [SugarSS](https://github.com/postcss/sugar
 
 ```json
 {
-  "extends": "stylelint-config-strict",
+  "extends": "@xmgh/stylelint-config-strict",
   "rules": {
     "block-closing-brace-empty-line-before": null,
     "block-closing-brace-newline-after": null,
