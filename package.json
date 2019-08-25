@@ -1,5 +1,5 @@
 {
-  "name": "stylelint-config-strict",
+  "name": "@xmgh/stylelint-config-strict",
   "version": "1.0.0",
   "description": "strict shareable config for stylelint",
   "keywords": [
