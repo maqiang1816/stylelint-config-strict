@@ -22,7 +22,7 @@ module.exports = {
     'block-closing-brace-empty-line-before': 'never', // 禁止在闭括号之前有空行
     'block-closing-brace-newline-after': 'always', // 在闭括号之后要求有一个换行符
     'block-closing-brace-newline-before': 'always-multi-line',
-    'block-closing-brace-space-after': 'always',
+    'block-closing-brace-space-after': 'always-single-line',
     'block-closing-brace-space-before': 'always-single-line',
     'block-no-empty': true,
     'block-opening-brace-newline-after': 'always-multi-line',
@@ -67,7 +67,7 @@ module.exports = {
     'declaration-block-no-shorthand-property-overrides': true, // 禁止缩写属性覆盖相关普通写法属性
     'declaration-block-semicolon-newline-after': 'always', // 在声明块的分号之后要求有一个换行符
     'declaration-block-semicolon-newline-before': 'never-multi-line', // 在声明块的分号之前禁止有空白
-    'declaration-block-semicolon-space-after': 'always', // 在声明块的分号之后要求有一个空格
+    'declaration-block-semicolon-space-after': 'always-single-line', // 在同一行的声明块的分号之后要求有一个空格
     'declaration-block-semicolon-space-before': 'never', // 在声明块的分号之后禁止有空白
     'declaration-block-single-line-max-declarations': 1, // 限制单行声明块中声明的数量为1
     'declaration-block-trailing-semicolon': 'always', // 要求在声明块中使用拖尾分号
@@ -91,13 +91,13 @@ module.exports = {
     'declaration-property-value-whitelist': null, // 不指定一个在声明中禁止使用的属性和值的白名单
     'font-family-name-quotes': 'always-where-recommended', // 指定字体名称需要使用引号括起来
     'font-family-no-duplicate-names': true, // 禁止使用重复的字体名称
-    'font-family-no-missing-generic-family-keyword': true,
+    'font-family-no-missing-generic-family-keyword': null,
     'font-weight-notation': [ 'named-where-possible', {
       ignore: ['relative'],
     }], // 要求使用数字或命名的 (可能的情况下) font-weight 值
     'function-blacklist': null, // 不指定一个禁用的函数的黑名单
-    'function-calc-no-invalidr': true,
-    'funciton-calc-no-unspaced-operator': true,
+    'function-calc-no-invalid': true,
+    'function-calc-no-unspaced-operator': true,
     'function-comma-newline-after': 'always-multi-line',
     'function-comma-newline-before': 'never-multi-line',
     'function-comma-space-after': 'always-single-line',
@@ -119,7 +119,7 @@ module.exports = {
     'length-zero-no-unit': true, // 长度为0时，禁止使用单位
     'linebreaks': 'unix',
     'max-empty-lines': 1, // 限制相邻空行的数量为1
-    'max-nesting-depth': [ 3, {
+    'max-nesting-depth': [ 5, {
       ignore: [
         'blockless-at-rules',
         'pseudo-classes',
@@ -178,11 +178,11 @@ module.exports = {
     'selector-list-comma-newline-before': 'never-multi-line', // 禁止在选择器列表的逗号之前有空白
     'selector-list-comma-newline-after': 'always', // 要求选择器列表的逗号之后有一个换行符
     'selector-list-comma-space-before': 'never', // 禁止在选择器列表的逗号之前有空白
-    'selector-list-comma-space-after': 'always', // 要求在选择器列表的逗号之后有一个空格
+    'selector-list-comma-space-after': 'always-single-line', // 要求在同一行的选择器列表的逗号之后有一个空格
     'selector-max-attribute': 2,
-    'selector-max-class': 3,
+    'selector-max-class': 5,
     'selector-max-combinators': 3,
-    'selector-max-compound-selectors': 3,
+    'selector-max-compound-selectors': 5,
     'selector-max-empty-lines': 0,
     'selector-max-id': 2,
     'selector-max-pseudo-class': 2,
@@ -193,14 +193,13 @@ module.exports = {
     'selector-no-qualifying-type': [ true, {
       ignore: ['attribute', 'class', 'id'],
     }],
-    'selector-no-universal': null, // 不禁用通配符选择器
     'selector-no-vendor-prefix': true, // 选择器禁止使用浏览器引擎前缀
     'selector-pseudo-class-blacklist': null, // 不指定允许使用的伪类选择器的黑名单
     'selector-pseudo-class-case': 'lower', // 指定伪类选择器为小写
     'selector-pseudo-class-no-unknown': true, // 禁止使用未知的伪类选择器
     'selector-pseudo-class-parentheses-space-inside': 'never', // 在伪类选择器的括号内禁止有空白
     'selector-pseudo-class-whitelist': null, // 不指定允许使用的伪类选择器的白名单
-    'selector-pseudo-element-blacklis': null, // 不指定允许使用的伪元素选择器的黑名单
+    'selector-pseudo-element-blacklist': null, // 不指定允许使用的伪元素选择器的黑名单
     'selector-pseudo-element-case': 'lower', // 指定伪元素选择器为小写
     'selector-pseudo-element-colon-notation': 'double', // 指定伪元素选择器使用双冒号
     'selector-pseudo-element-no-unknown': true, // 禁止使用未知的伪元素选择器
