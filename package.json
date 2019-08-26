@@ -1,6 +1,6 @@
 {
   "name": "@xmgh/stylelint-config-strict",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "strict shareable config for stylelint",
   "author": "maqiang1816@foxmail.com",
   "license": "MIT",
