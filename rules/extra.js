@@ -9,7 +9,7 @@ module.exports = {
     'at-rule-semicolon-space-before': 'never', // 禁止在 @ 规则的分号之前有空格
     'at-rule-whitelist': null, // 不指定允许使用的 @ 规则的白名单
     'block-closing-brace-space-after': 'always-single-line', // 在闭括号之后要求有一个空格
-    'block-opening-brace-newline-before': 'always-multi-line', // 在括开号之前要求有一个换行符或空白
+    'block-opening-brace-newline-before': null, // 在开括号之前不做要求
     'color-named': [ 'never', {
       ignore: ['inside-function'],
     }], // 禁止使用命名的颜色
