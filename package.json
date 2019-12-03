@@ -29,6 +29,8 @@
     "@xmgh/eslint-config-strict-base": "1.1.1",
     "eslint": "5.16.0",
     "eslint-plugin-import": "2.18.2",
+    "husky": "3.0.7",
+    "lint-staged": "9.4.0",
     "stylelint": "10.1.0"
   },
   "eslintConfig": {
