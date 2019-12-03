@@ -1,28 +1,15 @@
 {
-  "name": "@xmgh/stylelint-config-strict",
-  "version": "1.0.7",
+  "name": "stylelint-config-strict",
   "description": "strict shareable config for stylelint",
   "author": "maqiang1816@foxmail.com",
   "license": "MIT",
-  "main": "index.js",
-  "files": [
-    "rules",
-    "index.js"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/maqiang1816/stylelint-config-strict.git"
   },
-  "keywords": [
-    "stylelint",
-    "stylelint-config",
-    "strict"
-  ],
   "scripts": {
-    "dry-release": "npmpub --dry --verbose",
     "lint-staged": "lint-staged",
-    "lint": "eslint . --ignore-path .gitignore",
-    "release": "npmpub"
+    "eslint:fix": "eslint --ext .js rules --fix"
   },
   "husky": {
     "hooks": {
@@ -36,20 +23,21 @@
       "git add"
     ]
   },
-  "peerDependencies": {
-    "stylelint": "^8.3.0 || ^9.0.0 || ^10.0.0"
-  },
   "devDependencies": {
     "@commitlint/cli": "8.1.0",
     "@commitlint/config-conventional": "8.1.0",
+    "@xmgh/eslint-config-strict-base": "1.1.1",
     "eslint": "5.16.0",
-    "eslint-config-stylelint": "11.1.0",
-    "npmpub": "4.1.0",
+    "eslint-plugin-import": "2.18.2",
     "stylelint": "10.1.0"
   },
   "eslintConfig": {
     "extends": [
-      "stylelint"
-    ]
+      "@xmgh/eslint-config-strict-base"
+    ],
+    "rules": {
+      "sonarjs/no-duplicate-string": "off",
+      "max-lines": "off"
+    }
   }
 }

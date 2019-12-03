@@ -1,0 +1,27 @@
+{
+  "name": "@xmgh/stylelint-config-strict-base",
+  "version": "1.0.0",
+  "description": "An shareable strict config for stylelint",
+  "author": "maqiang1816@foxmail.com",
+  "license": "ISC",
+  "main": "index.js",
+  "files": [
+    "rules",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maqiang1816/stylelint-config-strict.git"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "strict"
+  ],
+  "peerDependencies": {
+    "stylelint": "10.1.0"
+  },
+  "devDependencies": {
+    "stylelint": "10.1.0"
+  }
+}
